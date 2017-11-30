@@ -7,6 +7,6 @@ var transform = function( elements, callback ) {
 }
 
 
-console.log(transform(words, function(word){return word.length}));
+console.log(transform(words, function(word){return word.split('').reverse().join('')}));
 
 
