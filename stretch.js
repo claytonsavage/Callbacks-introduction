@@ -1,14 +1,14 @@
 var wrapLog = function (callback, name) {
   /* your code here */
 
-return function(){
+  return function(){
 
-  if (arguments.length < 3) {
-  console.log(`${name} (${arguments[0]}, ${arguments[1]}) => ${arguments[0]*arguments[1]}`);
-  } else if (arguments.length = 3){
-    console.log(`${name} (${arguments[0]}, ${arguments[1]}, ${arguments[2]}) => ${arguments[0]*arguments[1]*arguments[2]}`);
-  }
-}
+    if (arguments.length < 3) {
+      console.log(`${name} (${arguments[0]}, ${arguments[1]}) => ${arguments[0] * arguments[1]}`);
+    } else if (arguments.length = 3){
+      console.log(`${name} (${arguments[0]}, ${arguments[1]}, ${arguments[2]}) => ${arguments[0] * arguments[1] * arguments[2]}`);
+    }
+  };
 
 
 };

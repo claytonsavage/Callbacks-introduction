@@ -5,14 +5,14 @@ function makeLoadedDie() {
   return function() {
 
 
-    if (roll < list.length-1) {
+    if (roll < list.length - 1) {
       roll += 1;
       return list[roll];
     } else {
       roll = 0;
       return list[roll];
     }
-  }
+  };
 }
 
 var rollLoadedDie = makeLoadedDie();
